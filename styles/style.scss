@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "MPlusRounded";
+  src: url("../fonts/MPLUSRounded1c-Medium.ttf");  
+}
+@font-face {
+  font-family: "Pacifico";
+  src: url(../fonts/Pacifico-Regular.ttf);
+}
+
+$black: #1e1b18;
+$white: #fffaff;
+$blue: #3e92cc;
+$red: #d8315b;
+
+$header1: 3.2rem;
+$header2: 2.4rem;
+$header3: 1.5rem;
+
+@mixin flex($direction, $align, $justify) {
+    display: flex;
+    flex-direction: $direction;    
+    align-items: $align;    
+    justify-content: $justify;
+}
+
+@import "global";
+@import "navi-bar";
+@import "promo";
+@import "gallery";
+@import "where_to_use";
+@import "contacts";
+@import "footer";

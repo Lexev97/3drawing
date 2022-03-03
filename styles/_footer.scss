@@ -1,0 +1,42 @@
+footer {
+  background: $black;
+  color: $white;
+}
+
+.footer-wrapper {
+  @include flex(row, center, center);
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1rem;
+  min-height: 5vh;
+
+  p {
+    flex: 3 1 20rem;
+  }
+
+  ul {
+    list-style: none;
+    @include flex(row, center, space-around);
+    flex: 1 1 20rem;
+    flex-wrap: wrap;
+  }
+
+  img {
+    vertical-align: middle;
+    max-height: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 524px) {
+  .footer-wrapper {
+    p {
+      text-align: center;
+      padding: 0.5rem;
+      order: 2;
+    }
+    ul{
+        padding: 1rem;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+#where_to_use {
+  padding-bottom: 3rem;
+  color: $white;
+  display: flex;
+  flex-wrap: wrap;
+
+  header {
+    margin: 3rem 0 3rem 3rem;
+    background-color: $blue;
+    width: 100%;
+    border-radius: 1rem 0 0 1rem;
+  }
+
+  .contacts-header {
+    width: 90%;
+    margin: 1rem auto;
+    font-weight: 400;
+  }
+}
+
+.cards {
+  width: 80%;
+  margin: 0 auto;
+
+//   @include flex(row, stretch, space-around);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  
+
+  .card {
+    background: url(../img/bgdGrid.png);
+    border: 0.5rem solid $blue;
+    border-radius: 2rem;
+    color: $blue;
+    padding: 3rem 3rem 3rem 3rem;
+    margin: 2rem 0.5rem;
+    
+    flex: 0 1 20rem;
+    align-self: stretch;
+    text-align: center;
+    min-width: 25rem;
+
+    h2 {
+      padding-top: 3rem;
+      font-weight: bold;
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+}

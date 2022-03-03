@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="3Drawing - Interior, architectural objects and engineering structures 3D
+      modeling."
+    />
+    <meta name="robots" content="index,follow" />
+    <link rel="icon" href="./logoicologo.svg" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>
+      3Drawing - Interior, architectural objects and engineering structures 3D
+      modeling.
+    </title>
+  </head>
+  <body>
+    <header id="navi-bar">
+      <nav>
+        <div class="logo">
+          <img src="./img/logo.svg" />
+          <h2>3Drawing</h2>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#promo">HOME</a></li>
+          <li><a href="#gallery">OUR WORK</a></li>
+          <li><a href="#where_to_use">WHERE TO USE</a></li>
+          <li><a href="#contacts">CONTACTS</a></li>
+        </ul>
+        <div class="min-menu">
+          <span class="line1"></span>
+          <span class="line2"></span>
+          <span class="line3"></span>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="promo">
+        <h1>
+          Give your idea the shape - <br />
+          make 3D model for it
+        </h1>
+        <button onclick="window.location.href = '#contacts'" type="button">CONTACT US</button>
+      </section>
+
+      <section id="gallery">
+        <header>
+          <h2 class="section-header">Our Work</h2>
+        </header>
+        <div class="images">
+          <div class="box1 box">
+            <img class="pic" src="./img/pr15_D.png" alt="" id="PR15_" />
+          </div>
+          <div class="box2 box">
+            <img class="pic" src="./img/pr17_D.png" alt="" id="PR17_" />
+          </div>
+          <div class="box3 box">
+            <img class="pic" src="./img/pr21_D.png" alt="" id="PR21_" />
+          </div>
+          <div class="box4 box">
+            <img class="pic" src="./img/pr19_D.png" alt="" id="PR19_" />
+          </div>
+          <div class="box5 box">
+            <img class="pic" src="./img/pr26_D.png" alt="" id="PR26_" />
+          </div>
+          <div class="box6 box">
+            <img class="pic" src="./img/pr31_D.png" alt="" id="PR31_" />
+          </div>
+        </div>
+      </section>
+
+      <section id="where_to_use">
+        <header>
+          <h2 class="section-header">Where can you use it?</h2>
+        </header>
+        <div class="cards">
+          <div class="card">
+            <img src="./img/furndesig.svg" alt="Furniture" />
+            <h2>
+              Furniture and <br />
+              interior design
+            </h2>
+          </div>
+          <div class="card">
+            <img src="./img/archdesig.svg" alt="Architecture" />
+            <h2>Architecture</h2>
+          </div>
+          <div class="card">
+            <img src="./img/3dprint.svg" alt="3D Printing" />
+            <h2>3D Printing</h2>
+          </div>
+          <div class="card">
+            <img src="./img/engdesig.svg" alt="Engineering" />
+            <h2>Engineering</h2>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacts">
+        <header>
+          <h1>Describe your idea and we return with a proposal</h1>
+        </header>
+        <div>
+          <form>
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Describe your idea here."
+              rows="5"
+            ></textarea>
+            <label for="name">Your Name</label>
+            <input type="text" placeholder="Clark Kent" id="name" />
+            <label for="email">E-mail</label>
+            <input type="email" placeholder="example@mail.com" id="email" />
+            <button type="submit">SEND</button>
+          </form>
+          
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-wrapper">
+        <p>&copy 3Drawing, since 2022</p>
+        <ul>
+          <li>
+            <a href="https://www.facebook.com">
+              <img src="./img/facebook_icon.svg" alt="Facebook" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com">
+              <img src="./img/instagram_icon.svg" alt="Instagram" />
+            </a>
+          </li>
+          <li>
+            <a href="https://web.telegram.org">
+              <img src="./img/telegram_icon.svg" alt="telegram" />
+            </a>
+          </li>
+          <li>
+            <a href="https://vk.com">
+              <img src="./img/vk_icon.svg" alt="VK" />
+            </a>
+          </li>
+          <li>
+            <a href="https://web.whatsapp.com">
+              <img
+                src="./img/whatsapp_icon.svg"
+                alt="WhatsApp"
+                href="https://web.whatsapp.com"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,121 @@
+#navi-bar {
+  width: 100%;
+  background-color: $blue;
+  position: sticky;
+  top: 0;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+  color: $white;
+  z-index: 1;
+}
+
+nav {
+  @include flex(row, center, space-between);
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+  padding: 0.5rem 0;
+
+  .logo {
+    @include flex(row, center, flex-start);
+    flex: 6 1 20rem;
+    h2 {
+      font-family: "pacifico";
+      font-weight: normal;
+    }
+
+    img {
+      height: 2.7rem;
+      margin: 0.5rem;
+    }
+  }
+
+  .nav-links {
+    @include flex(row, center, space-around);
+    flex: 1 1 40rem;
+    font-weight: 300;
+    flex-wrap: wrap;
+    li {
+      padding: 0 1rem;
+    }
+  }
+}
+
+
+@media screen and (max-width: 777px) {
+  #navi-bar {
+    .nav-links {
+      background-color: $blue;
+      width: 80%;
+      height: 20%;
+      position: fixed;
+      top: 6.5rem;
+      left: 110%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+      border-radius: 1rem;
+      transition: transform 1s ease;
+
+      li :hover {
+        background-color: $red;
+        padding: 0 2rem;
+        border-radius: 1rem;
+      }
+    }
+  }
+
+
+  .min-menu{
+    cursor: pointer;
+    span {
+    padding: 0.2rem 2rem;
+    background-color: $white;
+    margin: 0.5rem 0rem;
+    display: block;
+    border-radius: 0.5rem;
+    transition: all 0.5s ease;
+  }
+  } 
+
+  .nav-open {
+    transform: translate(-125%);
+  }
+
+  .toggle .line1 {
+    transform: rotateZ(45deg) translateY(300%);
+  }
+  .toggle .line2 {
+    opacity: 0;
+  }
+  .toggle .line3 {
+    transform: rotateZ(-45deg) translateY(-300%);
+  }
+
+  //  CSS OPTION:
+  //
+  // .menu-check {
+  //   display: block;
+  //   position: absolute;
+  //   top: 50%;
+  //   right: 10%;
+  //   transform: translate(5%, -50%);
+  //   width: 4.5rem;
+  //   height: 4.5rem;
+  //   cursor: pointer;
+  //   opacity: 0;
+  // }
+  // .menu-check:checked + .nav-links {
+  //   transform: translate(-125%);
+  // }
+
+  // .menu-check:checked ~ .min-menu span:nth-child(1) {
+  //   transform: rotateZ(45deg) translateY(300%);
+  // }
+  // .menu-check:checked ~ .min-menu span:nth-child(2) {
+  //   opacity: 0;
+  // }
+  // .menu-check:checked ~ .min-menu span:nth-child(3) {
+  //   transform: rotateZ(-45deg) translateY(-300%);
+  // }
+}

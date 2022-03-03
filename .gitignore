@@ -23,6 +23,9 @@ dist/
 target/
 dist/
 
+# Figma
+*.fig
+
 # JetBrains IDE
 .idea/
 
@@ -47,4 +50,8 @@ Thumbs.db
 *.flv
 *.mov
 *.wmv
+
+# Test files
+test/
+
 
