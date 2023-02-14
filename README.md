@@ -16,7 +16,7 @@
 
 **Стек**
 
-JavaScript, HTML5, CSS3, БЭМ, flex, адаптивная верстка.
+JavaScript, HTML5, SASS, CSS3, БЭМ, flex, адаптивная верстка.
 
 **Ссылка на GitHub Pages**
 
