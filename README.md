@@ -20,5 +20,5 @@ JavaScript, HTML5, SASS, CSS3, БЭМ, flex, адаптивная верстка
 
 **Ссылка на GitHub Pages**
 
-https://lexev97.github.io/3drawing/index.html
+https://3drawing.netlify.app/
 
