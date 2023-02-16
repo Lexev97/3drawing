@@ -1,4 +1,4 @@
-# Проект: 3Drawing
+# 3Drawing
 
 ### Обзор
 * Описание
@@ -18,7 +18,7 @@
 
 JavaScript, HTML5, SASS, CSS3, БЭМ, flex, адаптивная верстка.
 
-**Ссылка на GitHub Pages**
+**Ссылка на сайт**
 
 https://3drawing.netlify.app/
 
